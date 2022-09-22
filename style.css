@@ -1,0 +1,96 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.password-container{
+    width: 500px;
+    height: 150px;
+    padding: 20px;
+    background-color: lightpink;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,0.3);
+    margin: 10px;
+}
+
+h2{
+    
+    font-size: 20px;
+}
+
+.input-container{
+    border: 2px solid black;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    align-items: center;
+
+}
+
+.input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 24px;
+    letter-spacing: 4px;
+}
+
+.input::placeholder{
+    letter-spacing: 0px;
+
+}
+
+.fa-copy{
+    cursor: pointer;
+    opacity: 0.1;
+}
+
+.fa-copy:hover{
+    opacity: 0.7;
+    color: green;
+}
+
+.btn{
+    background-color: black;
+    border: none;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    letter-spacing: 1px;
+
+}
+
+.btn:hover{
+    background-color: green;
+}
+
+.btn:active{
+    transform: scale(0.95);
+}
+ 
+.alert-container{
+    position: fixed;
+    width: 300px;
+    height: 50px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    right: 20px;
+    bottom: 20px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+}
+
+.active.alert-container{
+    right: -300px;
+}
